@@ -1170,6 +1170,27 @@ section[id], main[id] { scroll-margin-top: 90px; }
 }
 .track-badges b { color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: .78rem; display: block; margin-bottom: 2px; }
 
+/* ===== Projeto de extensão ===== */
+.ext-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 32px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--border);
+}
+@media (min-width: 700px) { .ext-stats { grid-template-columns: repeat(4, 1fr); } }
+.ext-stats dt {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.ext-stats dd { margin: 2px 0 0; color: var(--text-muted); font-size: .82rem; }
+#extensao .note { margin-top: 28px; }
+.card .jump-link { margin-top: 12px; font-size: .92rem; }
+.card .jump-link a { margin-left: 0; }
+
 /* ===== Chain diagram (relação ensino-estágio) ===== */
 .chain {
   display: flex;
